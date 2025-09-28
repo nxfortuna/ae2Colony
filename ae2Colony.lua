@@ -1,13 +1,5 @@
 local scriptName = "AE2 Colony"
 local scriptVersion = "0.4.1"
-local apVersions = {
-  ["0.7.51b"] = true, -- script can crash if colonists are missing tools/weapons/armour
-  ["0.7.55b"] = true  -- best version to use at the moment July 15'25
-}
-local requiredAP = advancedperipherals and advancedperipherals.getAPVersion()
-if not apVersions[requiredAP] then
-  error("Incompatible Advanced Peripherals version: " .. tostring(requiredAP))
-end
 
 --[[-------------------------------------------------------------------------------------------------------------------
 author: toastonrye
